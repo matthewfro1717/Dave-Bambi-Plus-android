@@ -2,7 +2,7 @@ package;
 
 import flixel.math.FlxMath;
 import flixel.tweens.misc.ColorTween;
-import flixel.addons.display.FlxBackdrop;
+import flixel.util.FlxAxes;
 import flixel.FlxSprite;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
@@ -31,7 +31,7 @@ class SelectLanguageState extends MusicBeatState
 
       langaugeList = LanguageManager.getLanguages();
       
-      bg = new FlxBackdrop(Paths.image('ui/checkeredBG', 'preload'), 1, 1, true, true, 1, 1);
+      bg = new FlxAxes(Paths.image('ui/checkeredBG', 'preload'), 1, 1, true, true, 1, 1);
       bg.antialiasing = true;
       bg.color = langaugeList[curLanguageSelected].langaugeColor;
       add(bg);
