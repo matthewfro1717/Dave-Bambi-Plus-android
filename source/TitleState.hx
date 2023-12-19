@@ -20,7 +20,7 @@ import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import openfl.Assets;
 import lime.app.Application;
-import flixel.addons.display.FlxBackdrop;
+import flixel.util.FlxAxes;
 import flixel.addons.effects.FlxTrail;
 import flixel.math.FlxMath;
 #if desktop
@@ -161,7 +161,7 @@ class TitleState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
 
-		bgMenu = new FlxBackdrop(Paths.image('ui/titleBg'), 10, 0, true, true);
+		bgMenu = new FlxAxes(Paths.image('ui/titleBg'), 10, 0, true, true);
         bgMenu.velocity.set(70, 70); //thats it :D- snake
 		add(bgMenu);
 
