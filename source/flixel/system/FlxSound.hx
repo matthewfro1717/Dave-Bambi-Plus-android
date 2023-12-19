@@ -13,6 +13,7 @@ import flixel.math.FlxPoint;
 import flixel.system.FlxAssets.FlxSoundAsset;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxStringUtil;
+import flixel.sound.FlxSound;
 import openfl.Assets;
 #if flash11
 import flash.utils.ByteArray;
