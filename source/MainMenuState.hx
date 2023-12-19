@@ -23,7 +23,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import lime.app.Application;
-import flixel.addons.display.FlxBackdrop;
+import flixel.util.FlxAxes;
 import flixel.input.keyboard.FlxKey;
 import flixel.util.FlxGradient;
 #if desktop
@@ -132,7 +132,7 @@ class MainMenuState extends MusicBeatState
 
 	var black:FlxSprite;
 
-	var checker:FlxBackdrop = new FlxBackdrop(Paths.image('ui/checkeredBG'), 0.2, 0.2, true, true);
+	var checker:FlxAxes = new FlxAxes(Paths.image('ui/checkeredBG'), 0.2, 0.2, true, true);
 	var gradientBar:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, 300, 0xFFfd719b);
 
 	override function create()
