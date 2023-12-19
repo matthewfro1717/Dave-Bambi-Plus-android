@@ -10,7 +10,7 @@ import sys.FileSystem;
 import flixel.util.FlxArrayUtil;
 import flixel.addons.plugin.FlxScrollingText;
 import Alphabet;
-import flixel.addons.display.FlxBackdrop;
+import flixel.util.FlxAxes;
 import openfl.display.ShaderParameter;
 import openfl.display.Graphics;
 import flixel.group.FlxSpriteGroup;
@@ -54,7 +54,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
-import flixel.system.FlxSound;
+import flixel.sound.FlxSound;
 import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
@@ -399,7 +399,7 @@ class PlayState extends MusicBeatState
 	var daveBG:String;
 	var bambiBG:String;
 	var tristanBG:String;
-	var charBackdrop:FlxBackdrop;
+	var charBackdrop:FlxAxes;
 	var alphaCharacters:FlxTypedGroup<Alphabet> = new FlxTypedGroup<Alphabet>();
 	var daveSongs:Array<String> = ['House', 'Insanity', 'Polygonized', 'Bonus Song'];
 	var bambiSongs:Array<String> = ['Blocked', 'Corn-Theft', 'Maze', 'Mealie'];
@@ -2596,7 +2596,7 @@ class PlayState extends MusicBeatState
 				freeplayBG.alpha = 0;
 				add(freeplayBG);
 				
-				charBackdrop = new FlxBackdrop(Paths.image('recursed/daveScroll'), 1, 1, true, true);
+				charBackdrop = new FlxAxes(Paths.image('recursed/daveScroll'), 1, 1, true, true);
 				charBackdrop.antialiasing = true;
 				charBackdrop.scale.set(2, 2);
 				charBackdrop.screenCenter();
