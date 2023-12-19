@@ -13,7 +13,7 @@ import flixel.util.FlxSave;
 
 class SelectLanguageState extends MusicBeatState
 {
-   var bg:FlxBackdrop;
+   var bg:FlxAxes;
    var selectLanguage:FlxText;
    var textItems:Array<FlxText> = new Array<FlxText>();
    var curLanguageSelected:Int;
