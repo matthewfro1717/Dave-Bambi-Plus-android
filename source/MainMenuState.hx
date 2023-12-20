@@ -132,7 +132,7 @@ class MainMenuState extends MusicBeatState
 
 	var black:FlxSprite;
 
-	var checker:FlxAxes = new FlxAxes(Paths.image('ui/checkeredBG'), 0.2, 0.2, true, true);
+	var checker:FlxAxes = new FlxAxes(Paths.image('ui/checkeredBG'), 0.2, 0.2, true, true)
 	var gradientBar:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, 300, 0xFFfd719b);
 
 	override function create()
@@ -212,7 +212,7 @@ class MainMenuState extends MusicBeatState
 				gradientBar.y = FlxG.height - gradientBar.height;
 				add(gradientBar);
 				gradientBar.scrollFactor.set(0, 0);
-		
+
 				add(checker);
 				checker.scrollFactor.set(0, 0.07);
 			}

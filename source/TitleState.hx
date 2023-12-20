@@ -132,7 +132,7 @@ class TitleState extends MusicBeatState
 	var gfDance:FlxSprite;
 	var danceLeft:Bool = false;
 	var titleText:FlxSprite;
-	var bgMenu:FlxBackdrop;
+	var bgMenu:FlxAxes;
 	var bgFlash:FlxSprite;
 
 	function startIntro()
